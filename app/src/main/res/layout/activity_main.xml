@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Widget.MaterialComponents.TextView"
+            android:id="@+id/textV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:text="Количество нажатий на кнопку 1: 0"
+            android:textSize="20dp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenDB"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="-0.03"
+            android:onClick="addNum1"
+            android:text="Кнопка 1"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            tools:visibility="visible" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameL"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Widget.MaterialComponents.TextView"
+            android:id="@+id/textV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:text="Количество нажатий на кнопку 2: 0"
+            android:textSize="20dp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="-0.03"
+            android:text="Кнопка 2"
+            android:onClick="addNum2"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            tools:visibility="visible" />
+    </FrameLayout>
+</RelativeLayout>
